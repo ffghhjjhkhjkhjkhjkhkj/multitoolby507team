@@ -1,4 +1,5 @@
 import os
+import requests
 
 print("Привет! спасибо за установку мультитула от 507-team")
 print("Что вы хотите сделать?")
@@ -6,6 +7,9 @@ print("")
 print("1: Обновить систему")
 print("2: Установка ПО")
 print("3: Инфо о системе")
+print("4: Проверка на обновление (BETA)")
+print("5: Установка DE (на закрытом бета тесте)")
+print("6: Что нового в обновление v1.2?")
 print("")
 print("Напишите цифру: ")
 choice = input()
@@ -25,6 +29,7 @@ if choice == "2":
     print("3: Steam (для геймеров)")
     print("4: docker (для... незнаю кого)")
     print("5: hollywood (не ну а че?)")
+    print("")
     print("0: Категории (BETA)")
     print("")
     print("Введите цифру:")
@@ -101,3 +106,26 @@ if choice == "2":
                 
 if choice == "3":
     os.system("neofetch")
+
+if choice == "4":
+    print("Идет проверка на обновление... Устанавливаеться связь с серверами 507-team...")
+    try:
+        response = requests.get("http://31.186.132.18:5567/updateavailable?")
+        if response.text.startswith("yes:v"):
+            version = response.text.split(":")[1]
+            current_version = "v1.2" 
+            if version == current_version:
+                print("У вас последняя версия!")
+            else:
+                print(f"Доступно обновление! Версия: {version}")
+        else:
+            print("Обновления нет.")
+    except requests.exceptions.RequestException as e:
+        print(f"Произошла оишбка при попытке установить связь с серверами 507-team: {e}")
+
+if choice == "5":
+    print("Данная функция на закрытом бета тесте")
+
+if choice == "6":
+    print("Устанавливаю соединение с сервером через curl...")
+    os.system("curl http://31.186.132.18:5567/v1.2")
