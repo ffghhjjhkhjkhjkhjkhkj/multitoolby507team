@@ -3,10 +3,10 @@
 
 Устанока:
 `
-wget https://github.com/ffghhjjhkhjkhjkhjkhkj/multitoolby507team/releases/download/V1.1/Linux.V1.1 && chmod +x Linux.V1.1 && ./Linux.V1.1
+wget https://github.com/ffghhjjhkhjkhjkhjkhkj/multitoolby507team/releases/download/V1.2/Linux.V1.2 && chmod +x Linux.V1.2 && ./Linux.V1.2
 `
 
 Для последующего запуска:
 `
-./Linux.V1.1
+./Linux.V1.2
 `
