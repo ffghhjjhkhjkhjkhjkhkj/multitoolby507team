@@ -10,3 +10,6 @@ wget https://github.com/ffghhjjhkhjkhjkhjkhkj/multitoolby507team/releases/downlo
 `
 ./Linux.V1.2
 `
+
+
+К сожелению сервера были окончательно отключены 15.08.25
