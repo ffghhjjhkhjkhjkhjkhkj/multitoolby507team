@@ -12,4 +12,4 @@ wget https://github.com/ffghhjjhkhjkhjkhjkhkj/multitoolby507team/releases/downlo
 `
 
 
-К сожелению сервера были окончательно отключены 15.08.25
+К сожалению сервера были окончательно отключены 15.08.25
